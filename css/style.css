@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #6750A4;
+    --secondary-color: #625B71;
+    --background-color: #FEF7FF;
+    --text-color: #1C1B1F;
+    --surface-color: #FFFFFF;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--surface-color);
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.hero {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.feature-card {
+    background: var(--surface-color);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+}
+
+.download-section {
+    text-align: center;
+    padding: 60px 0;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 24px;
+    margin: 40px 0;
+}
+
+.download-button {
+    display: inline-block;
+    transition: transform 0.2s;
+    margin-top: 20px;
+}
+
+.download-button img {
+    height: 60px;
+    width: auto;
+}
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .hero h1 { font-size: 2rem; }
+}
